@@ -3,7 +3,7 @@ pipeline {
 		node any
 	}
 
-	properties {
+	options {
 		buildDiscarder(logRotator(numToKeepStr: '10'))
 		timestamps()
 	}

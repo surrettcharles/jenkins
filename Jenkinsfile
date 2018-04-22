@@ -12,7 +12,7 @@ pipeline {
 		stage('Determine Version') {
 			steps {
 				script {
-					if(BRANCH_NAME ~= /^master$/) {
+					if(BRANCH_NAME =~ /^master$/) {
 						buildType = 'release'
 					} else {
 						buildType = 'feature'

@@ -27,9 +27,8 @@ pipeline {
 		}
 		stage('Tag SCM') {
 			steps {
-				checkout scm
 				sh "git tag -a -m 'Jenkins build' ${versionNumber}"
-				sh 'git push'
+				sh "git push --set-upstream origin ${GIT_BRANCH}"
 			}
 		}
 	}

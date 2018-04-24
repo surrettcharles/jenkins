@@ -27,8 +27,10 @@ pipeline {
 		}
 		stage('Tag SCM') {
 			steps {
-				sh "git tag -a -m 'Jenkins build' ${versionNumber}"
-				sh "git push --set-upstream origin ${GIT_BRANCH}"
+				sshagent(['github']) {
+					sh "git tag -a -m 'Jenkins build' ${versionNumber}"
+					sh "git push --tags --set-upstream origin ${GIT_BRANCH}"
+				}
 			}
 		}
 	}

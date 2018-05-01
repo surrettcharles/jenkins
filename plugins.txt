@@ -1,0 +1,10 @@
+github-oauth
+pipeline-github
+pipeline-github-lib
+pipeline-githubnotify-step
+pipeline-model-definition
+pipeline-utility-steps
+sonar
+sonar-quality-gates
+timestamper
+versionnumber

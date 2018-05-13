@@ -5,7 +5,6 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 ### Added
-- Jenkins initialization script to disable the install setup step
 
 ### Changed
 
@@ -16,6 +15,10 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/).
 ### Fixed
 
 ### Security
+
+## [2018.5.R2]
+### Added
+- Jenkins initialization script to disable the install setup step
 
 ## [2018.5.R1]
 ### Added

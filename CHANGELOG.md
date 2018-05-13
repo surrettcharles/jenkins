@@ -19,6 +19,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/).
 - Disabled CLI access
 - Added GitHub OAuth configuration
 - Enabled CSRF protection
+- Disabled JNLP protocols
 
 ## [2018.5.R2]
 ### Added

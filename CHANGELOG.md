@@ -16,7 +16,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/).
 
 ### Security
 
-## [2018.5.R3]
+## [2018.5.R2]
 ### Added
 - Added matrix-auth to plugin list
 - Added script to configure system properties
@@ -29,11 +29,11 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/).
 - Disabled JNLP protocols
 - Enabled Agent --> Master security subsystem
 
-## [2018.5.R2]
+## [2018.5.R1]
 ### Added
 - Jenkins initialization script to disable the install setup step
 
-## [2018.5.R1]
+## [2018.5.R0]
 ### Added
 - Automation scripts to build/tag the version as it's built
 - Initial plugin list

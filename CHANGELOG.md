@@ -5,9 +5,6 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 ### Added
-- Added matrix-auth to plugin list
-- Added script to configure system properties
-- Updated `Jenkinsfile` to set the build description to the build version
 
 ### Changed
 
@@ -16,6 +13,14 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/).
 ### Removed
 
 ### Fixed
+
+### Security
+
+## [2018.5.R3]
+### Added
+- Added matrix-auth to plugin list
+- Added script to configure system properties
+- Updated `Jenkinsfile` to set the build description to the build version
 
 ### Security
 - Disabled CLI access

@@ -20,6 +20,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/).
 - Added GitHub OAuth configuration
 - Enabled CSRF protection
 - Disabled JNLP protocols
+- Enabled Agent --> Master security subsystem
 
 ## [2018.5.R2]
 ### Added

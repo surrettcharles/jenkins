@@ -4,7 +4,8 @@ import java.util.logging.Logger;
 
 Logger logger = Logger.getLogger("");
 
-def jobDslDirectory = new File('/jenkins-jobs');
+String jobPath = System.getenv("JOB_PATH");
+def jobDslDirectory = new File(jobPath);
 def workspace = new File('.');
 
 def jobManagement = new JenkinsJobManagement(System.out, [:], workspace);

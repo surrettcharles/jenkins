@@ -7,6 +7,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/).
 ### Added
 - Added job-dsl to plugin list
 - Added initialization script to process DSL job definitions
+- Added JOB_PATH environment variable to `Dockerfile`
 
 ### Changed
 

@@ -22,6 +22,8 @@ pipeline {
 					} else {
 						versionNumber = VersionNumber projectStartDate: '', versionNumberString: '${BUILD_YEAR}.${BUILD_MONTH}.F${feature}.${BUILDS_THIS_MONTH_Z}', versionPrefix: '', worstResultForIncrement: 'SUCCESS'
 					}
+
+					currentBuild.description = versionNumber
 				}
 			}
 		}

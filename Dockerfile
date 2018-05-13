@@ -1,6 +1,6 @@
 FROM jenkins/jenkins:alpine
 
-ARG CONFIG_PATH=/jenkins-config
+ENV CONFIG_PATH /jenkins-config
 ENV JENKINS_HOME /var/jenkins_home
 ENV JAVA_OPTS=-Djenkins.install.runSetupWizard=false
 COPY plugins.txt ${CONFIG_PATH}/plugins.txt

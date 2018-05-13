@@ -6,7 +6,7 @@
 *
 **/
 
-import java.util.logging.Logger
+import java.util.logging.Logger;
 import jenkins.*;
 import jenkins.model.*;
 import hudson.model.*;

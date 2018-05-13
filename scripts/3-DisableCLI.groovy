@@ -11,17 +11,17 @@ import jenkins.*;
 import jenkins.model.*;
 import hudson.model.*;
 
-Logger logger = Logger.getLogger("")
-Jenkins jenkins = Jenkins.getInstance()
+Logger logger = Logger.getLogger("");
+Jenkins jenkins = Jenkins.getInstance();
 
 // disable remoting cli
-jenkins.getDescriptor("jenkins.CLI").get().setEnabled(false)
+jenkins.getDescriptor("jenkins.CLI").get().setEnabled(false);
 
 // disabled CLI access over TCP listener (separate port)
-def p = AgentProtocol.all()
+def p = AgentProtocol.all();
 p.each { x ->
     if (x.name && x.name.contains("CLI")) {
-        p.remove(x)
+        p.remove(x);
     }
 }
 
@@ -29,11 +29,11 @@ p.each { x ->
 def removal = { lst ->
     lst.each { x ->
         if (x.getClass().name.contains("CLIAction")) {
-            lst.remove(x)
+            lst.remove(x);
         }
     }
 }
 
-logger.info("Removing the Jenkins CLI subsystem")
-removal(jenkins.getExtensionList(RootAction.class))
-removal(jenkins.actions)
+logger.info("Removing the Jenkins CLI subsystem");
+removal(jenkins.getExtensionList(RootAction.class));
+removal(jenkins.actions);

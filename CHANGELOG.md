@@ -17,7 +17,8 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/).
 
 ### Security
 - Disabled CLI access
-- Added default GitHub OAuth configuration
+- Added GitHub OAuth configuration
+- Enabled CSRF protection
 
 ## [2018.5.R2]
 ### Added

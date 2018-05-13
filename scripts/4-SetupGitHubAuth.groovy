@@ -22,6 +22,8 @@ Logger logger = Logger.getLogger("");
 Jenkins jenkins = Jenkins.getInstance();
 Yaml yaml = new Yaml();
 
+logger.info("Configuring GitHub OAuth plugin...");
+
 String configPath = System.getenv("CONFIG_PATH");
 try {
     configText = new File("${configPath}/security.yml").text;
@@ -94,3 +96,5 @@ securityGroups.each { group ->
 
 jenkins.setAuthorizationStrategy(strategy);
 jenkins.save();
+
+logger.info("GitHub OAuth plugin configured");

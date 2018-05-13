@@ -7,6 +7,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/).
 ### Added
 - Added matrix-auth to plugin list
 - Added script to configure system properties
+- Updated `Jenkinsfile` to set the build description to the build version
 
 ### Changed
 

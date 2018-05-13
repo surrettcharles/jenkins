@@ -1,4 +1,5 @@
 github-oauth
+job-dsl
 matrix-auth
 pipeline-github
 pipeline-github-lib

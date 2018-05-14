@@ -3,5 +3,6 @@
 Jenkinsfile
 License
 .git/
+examples/
 CHANGELOG.md
 README.md

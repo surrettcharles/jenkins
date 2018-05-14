@@ -12,9 +12,11 @@ def jobManagement = new JenkinsJobManagement(System.out, [:], workspace);
 
 logger.info("Loading DSL jobs...");
 
-jobDslDirectory.eachFile { jobDslScript ->
-	logger.info("Loading job ${jobDslScript.name}");
-	new JenkinsDslScriptLoader(jobManagement).runScript(jobDslScript.text);
-};
+if(jobDslDirectory.exists()) {
+	jobDslDirectory.eachFile { jobDslScript ->
+		logger.info("Loading job ${jobDslScript.name}");
+		new JenkinsDslScriptLoader(jobManagement).runScript(jobDslScript.text);
+	};
+}
 
 logger.info("DSL jobs loaded");

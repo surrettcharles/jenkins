@@ -1,0 +1,21 @@
+---
+MAIN:
+    WORKSPACE_ROOT_DIR: '${JENKINS_HOME}/workspace/${ITEM_FULLNAME}-sample'
+    BUILD_RECORD_ROOT_DIR: '${ITEM_ROOTDIR}/builds-sample'
+    SYSTEM_MESSAGE: ''
+    NUMBER_OF_EXECUTORS: 2
+    LABELS:
+        - "the_master"
+        - "no_jobs_here"
+    USAGE: 'EXCLUSIVE'
+    QUIET_PERIOD: 10
+    SCM_RETRY_COUNT: 15
+    DISABLE_REMEMBER_ME: true
+GLOBAL_PROPERTIES:
+    ENVIRONMENT_VARIABLES:
+    TOOL_LOCATIONS:
+LOCATION:
+    URL: 'http://localhost:8080'
+    ADMIN_EMAIL: 'admin@localhost'
+SHELL:
+    EXECUTABLE: '/bin/sh'

@@ -5,9 +5,8 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 ### Added
-- Added job-dsl to plugin list
-- Added initialization script to process DSL job definitions
-- Added JOB_PATH environment variable to `Dockerfile`
+- Added initialization script to import credentials. All credentials are created at the root folder.
+- Added logging to indicate no jobs found during initialization
 
 ### Changed
 
@@ -18,6 +17,16 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/).
 ### Fixed
 
 ### Security
+
+## [2018.5.R4]
+### Added
+- Updated script to not fail if job folder is not supplied
+
+## [2018.5.R3]
+### Added
+- Added job-dsl to plugin list
+- Added initialization script to process DSL job definitions
+- Added JOB_PATH environment variable to `Dockerfile`
 
 ## [2018.5.R2]
 ### Added

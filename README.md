@@ -9,6 +9,8 @@ This is a slightly opinionated build. Certain things will be turned on or off ba
 * You *must* supply the location of the configuration YAML files. By default it will expect these files in `/jenkins-config`, but this location can be overridden by supplying a value for the `CONFIG_PATH` environment variable for the container. Examples of the needed configuration files can be found in the [examples/config]() directory.
   * The authentication mechanism configured is GitHub OAuth. OAuth is my personal preferred method, as no credentials are stored locally. At some point in the future I may investigate other OAuth provider options (gitlab, google, facebook, etc.).
   * The authorization mechanism configured is the Jenkins matrix authorization. No real reason other than it being the one I found examples to use.
+  * Credentials created via the initialization script are created in the default namespace at the root folder. This is something I hope to rectify in a future release, as it can quickly lead to a long list of credentials to sort through for jobs.
+  * At this time all configuration files are required. You can supply an empty YAML file, but the file must exist or the startup will fail.
 * You may supply job definition scripts. By default the initialization script will expect these files in `/jenkins-jobs`, but this location can be overridden by supplying a value for the `JOB_PATH` environment variable for the container. If no scripts are detected, no jobs will be created. A few examples can be found in the [examples/jobs]() directory. You can see all the available options for job configuration at the [Jenkins Job DSL API site](https://jenkinsci.github.io/job-dsl-plugin/).
 
 ## Build

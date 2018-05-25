@@ -17,6 +17,8 @@ if(jobDslDirectory.exists()) {
 		logger.info("Loading job ${jobDslScript.name}");
 		new JenkinsDslScriptLoader(jobManagement).runScript(jobDslScript.text);
 	};
-}
 
-logger.info("DSL jobs loaded");
+	logger.info("DSL jobs loaded");
+} else {
+	logger.info("No jobs found");
+}

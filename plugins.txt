@@ -6,7 +6,9 @@ pipeline-github-lib
 pipeline-githubnotify-step
 pipeline-model-definition
 pipeline-utility-steps
+ssh-agent
 sonar
 sonar-quality-gates
 timestamper
 versionnumber
+ws-cleanup

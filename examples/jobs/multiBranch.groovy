@@ -1,4 +1,6 @@
-multibranchPipelineJob('example') {
+def jobName = 'example'
+
+multibranchPipelineJob(jobName) {
   branchSources {
     github {
       scanCredentialsId('github-ci')
@@ -12,3 +14,5 @@ multibranchPipelineJob('example') {
     }
   }
 }
+
+queue(jobName)

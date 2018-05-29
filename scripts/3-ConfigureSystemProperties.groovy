@@ -42,6 +42,7 @@ Map mainConfig = config.MAIN;
 Map propertiesConfig = config.GLOBAL_PROPERTIES;
 Map locationConfig = config.LOCATION;
 Map shellConfig = config.SHELL;
+Map gitConfig = config.GIT;
 
 logger.info("Configuring basic Jenkins options");
 try {
@@ -108,6 +109,15 @@ if (p.exitcode != 0) {
 Shell.DescriptorImpl shell = jenkins.getExtensionList(Shell.DescriptorImpl.class).get(0);
 shell.setShell(shellConfig.EXECUTABLE);
 shell.save();
+
+if (gitConfig != null) {
+	logger.info("Setting the default git username and email address");
+
+	def git = jenkins.getDescriptor("hudson.plugins.git.GitSCM");
+	git.setGlobalConfigName(gitConfig.USERNAME);
+	git.setGlobalConfigEmail(gitConfig.EMAIL);
+	git.save();
+}
 
 jenkins.save();
 logger.info("Finished configuring the main Jenkins options.");

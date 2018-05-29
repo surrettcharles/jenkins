@@ -19,3 +19,6 @@ LOCATION:
     ADMIN_EMAIL: 'admin@localhost'
 SHELL:
     EXECUTABLE: '/bin/sh'
+GIT:
+    USERNAME: 'gituser'
+    EMAIL: 'gituser@gitmail.com'

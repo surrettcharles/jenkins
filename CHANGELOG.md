@@ -5,8 +5,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 ### Added
-- Added initialization script to import credentials. All credentials are created at the root folder.
-- Added logging to indicate no jobs found during initialization
+-
 
 ### Changed
 
@@ -17,6 +16,21 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/).
 ### Fixed
 
 ### Security
+
+## [2018.5.R6]
+### Added
+- Added `greenballs`, `ssh-agent`, and `ws-cleanup` plugins
+
+### Changed
+- Updated `multiBranch.groovy` to show how to trigger indexing after a rebuild
+
+### Fixed
+- Updated logic in `1-DisableAdminSetup.groovy` so an NPE is not thrown on container restarts
+
+## [2018.5.R5]
+### Added
+- Added initialization script to import credentials. All credentials are created at the root folder.
+- Added logging to indicate no jobs found during initialization
 
 ## [2018.5.R4]
 ### Added

@@ -7,7 +7,6 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/).
 ### Added
 -
 
-
 ### Changed
 
 ### Deprecated
@@ -17,6 +16,16 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/).
 ### Fixed
 
 ### Security
+
+## [2018.5.R6]
+### Added
+- Added `greenballs`, `ssh-agent`, and `ws-cleanup` plugins
+
+### Changed
+- Updated `multiBranch.groovy` to show how to trigger indexing after a rebuild
+
+### Fixed
+- Updated logic in `1-DisableAdminSetup.groovy` so an NPE is not thrown on container restarts
 
 ## [2018.5.R5]
 ### Added
